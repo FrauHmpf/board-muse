@@ -1,0 +1,47 @@
+let Schrittzahl = 0
+input.onGesture(Gesture.Shake, () => {
+    if (true) {
+        Schrittzahl += 1
+        basic.showNumber(Schrittzahl)
+        if (Schrittzahl == 10) {
+            music.setTempo(50)
+            music.playTone(Note.D4, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.D4, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.D4, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.G4, music.beat(BeatFraction.Whole))
+            music.playTone(Note.D5, music.beat(BeatFraction.Whole))
+            music.rest(music.beat(BeatFraction.Half))
+            music.playTone(Note.C5, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.B4, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.A4, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.G5, music.beat(BeatFraction.Whole))
+            music.playTone(Note.D5, music.beat(BeatFraction.Half))
+            music.rest(music.beat(BeatFraction.Half))
+            music.playTone(Note.C5, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.B4, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.A4, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.G5, music.beat(BeatFraction.Whole))
+            music.playTone(Note.D5, music.beat(BeatFraction.Half))
+            music.rest(music.beat(BeatFraction.Half))
+            music.playTone(Note.C5, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.B4, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.C5, music.beat(BeatFraction.Quarter))
+            music.rest(music.beat(BeatFraction.Sixteenth))
+            music.playTone(Note.A4, music.beat(BeatFraction.Whole))
+            music.rest(music.beat(BeatFraction.Whole))
+        }
+    } else {
+        Schrittzahl += 0
+    }
+})
