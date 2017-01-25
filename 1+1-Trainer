@@ -1,0 +1,34 @@
+let Zahl2 = 0
+let Ergebnis = 0
+let Zahl1 = 0
+input.onButtonPressed(Button.A, () => {
+    Zahl1 = Math.random(11)
+    basic.showNumber(Zahl1)
+    basic.pause(1000)
+    basic.showLeds(`
+        . . . . .
+        . . # . .
+        . # # # .
+        . . # . .
+        . . . . .
+        `)
+    basic.pause(1000)
+    Zahl2 = Math.random(11)
+    basic.showNumber(Zahl2)
+    basic.pause(1000)
+    basic.clearScreen()
+})
+input.onButtonPressed(Button.B, () => {
+    Ergebnis = Zahl1 + Zahl2
+    basic.showLeds(`
+        . . . . .
+        . # # # .
+        . . . . .
+        . # # # .
+        . . . . .
+        `)
+    basic.pause(1000)
+    basic.clearScreen()
+    basic.showNumber(Ergebnis)
+    basic.clearScreen()
+})
